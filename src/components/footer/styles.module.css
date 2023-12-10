@@ -1,0 +1,19 @@
+/* Styles for the container goes here */
+.container {
+  @apply w-full fixed bottom-0 md:left-0 md:right-0 h-[80px] lg:h-[60px] sm:px-2 md:px-4 lg:px-[3rem] mt-[3rem] md:mt-0 flex flex-col lg:flex-row items-center justify-between;
+}
+
+/* First column */
+.column_one {
+  @apply order-2 lg:order-1 pb-4 lg:pb-0 lg:mb-0 flex text-[0.75rem] lg:text-[1rem] text-black font-[700] items-center justify-center;
+}
+
+/* Second column */
+.column_two {
+  @apply order-1 lg:order-2 mb-1 lg:mb-0 flex items-center justify-between text-black text-[0.75rem] lg:text-[1rem] font-[700];
+}
+
+/* Menu Container */
+.vercel_container {
+  @apply relative w-[100px] h-[50px];
+}

@@ -1,0 +1,13 @@
+.filled_btn,
+.outlined_btn {
+  @apply rounded-[100px] font-medium text-[0.5rem] md:text-[1rem] px-4 py-2;
+}
+/* Filled Button styles */
+.filled_btn {
+  @apply bg-[#1D1D1C] text-white border border-[#1D1D1C];
+}
+
+/* Outlined Button styles */
+.outlined_btn {
+  @apply bg-white border border-[#1D1D1C] flex items-center justify-between;
+}

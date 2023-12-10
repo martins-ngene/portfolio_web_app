@@ -1,0 +1,9 @@
+/* Logo Container */
+.logo_container {
+  @apply flex;
+}
+
+/* Logo */
+.brand {
+  @apply text-[0.8rem] md:text-[1.2rem] font-semibold ml-2;
+}
