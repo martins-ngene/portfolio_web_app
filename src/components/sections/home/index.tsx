@@ -2,6 +2,8 @@ import Image from "next/image";
 
 import styles from "./styles.module.css";
 import { Button } from "@/components/buttons";
+import Tag from "@/components/tags";
+import { skills_schema } from "@/components/constants";
 
 const Hero = () => {
   return (
@@ -12,8 +14,8 @@ const Hero = () => {
             className={styles.image}
             src='/profile.jpg'
             alt='profile'
-            width={300}
-            height={300}
+            width={400}
+            height={400}
           />
         </div>
         <h1 className={styles.header}>
@@ -40,7 +42,22 @@ const Hero = () => {
           <Button href='/sign_in' label='Github Profile' isFilled={false} />
         </div>
       </div>
-      <div className={styles.column_two}></div>
+      <div className={styles.column_two}>
+        {skills_schema.map((section, index) => {
+          return (
+            <div>
+              <h3 className={styles.section_name} key={index}>
+                {section.section_name}
+              </h3>
+              <div className={styles.tag_container}>
+                {section.tags.map((tag, index) => {
+                  return <Tag key={index} tag_name={tag} />;
+                })}
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

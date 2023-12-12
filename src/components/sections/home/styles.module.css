@@ -1,5 +1,5 @@
 .hero_container {
-  @apply bg-transparent;
+  @apply bg-transparent flex flex-col md:flex-row mx-auto w-[90%] justify-between;
 }
 
 .header,
@@ -16,7 +16,7 @@
 }
 
 .image_container {
-  @apply my-4 flex md:static items-center md:items-start justify-center md:justify-start w-full md:w-[25%];
+  @apply my-4 flex md:static items-center md:items-start justify-center md:justify-start w-full md:w-[30%];
 }
 
 .welcome_text {
@@ -25,4 +25,22 @@
 
 .btn_container {
   @apply mx-auto md:mx-0 flex items-center justify-between max-w-[200px] md:max-w-[300px] mt-4;
+}
+
+.column_one {
+  @apply w-full md:w-[47.5%];
+}
+
+.column_two {
+  @apply w-full md:w-[47.5%];
+}
+
+/* Tag Container */
+.tag_container {
+  @apply flex flex-wrap;
+}
+
+/* Section Name */
+.section_name {
+  @apply font-[600] text-[16px] md:text-[20px] italic text-center md:text-left;
 }
