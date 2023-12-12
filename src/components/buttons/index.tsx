@@ -6,10 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Button with styles for filled and outline
-export const Button = ({ label, isFilled, href }: ButtonPropsI) => {
+export const Button = ({ label, isFilled, href, type}: ButtonPropsI) => {
   return (
     <Link href={`${href}`} passHref>
       <button
+      type={type}
         className={`${isFilled ? styles.filled_btn : styles.outlined_btn}`}>
         {label}
         {!isFilled && (

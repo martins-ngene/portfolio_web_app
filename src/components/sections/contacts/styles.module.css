@@ -1,46 +1,51 @@
 /* Container Styles */
 .container {
-    @apply w-full md:w-[800px] flex items-center h-full md:h-[90vh] pt-[7rem] md:pt-[5rem] px-8 lg:px-0 mx-auto;
-  }
-  
-  /* Header */
-  .header {
-    @apply mx-0 mb-2 md:mb-4 font-semibold leading-8 text-[2rem];
-  }
-  
-  /* Welcome Text */
-  .welcome_text {
-    @apply my-2 md:my-4 text-[0.8rem] md:text-[1.375rem] text-black;
-  }
-  
-  /* Label */
-  .label {
-    @apply text-black mb-[0.625rem] font-[600] text-[1rem] leading-[120%];
-  }
-  
-  /* Input */
-  .input {
-    @apply mb-2 md:mb-4 lg:text-[1rem] outline-none w-full border border-[#E1E1E1] h-[30px] px-5 py-5;
-  }
-  
-  /* Name Container */
-  .name_container {
-    @apply flex flex-col lg:flex-row items-center justify-between;
-  }
-  
-  /* First & Last Names Styles */
-  .column_one,
-  .column_two {
-    @apply w-full lg:w-[47.5%];
-  }
-  
-  /* Styles for Label on TextArea */
-  .textLabel {
-    @apply mb-[0.625rem] font-[600] text-[1rem] leading-[120%];
-  }
-  
-  /* Stlyes for TextArea */
-  .textArea {
-    @apply px-[1rem] outline-none py-[0.90625rem] lg:text-[1rem] h-[100px] lg:h-[120px] w-full border border-[#E1E1E1];
-  }
-  
+  @apply w-[90%] mx-auto h-[80vh] mt-[5rem];
+}
+
+/* Header */
+.header {
+  @apply mx-0 mb-2 md:mb-4 font-semibold leading-8 text-[2rem];
+}
+
+/* Welcome Text */
+.welcome_text {
+  @apply my-2 md:my-4 text-[0.8rem] md:text-[1.375rem] text-black;
+}
+
+/* Label */
+.label {
+  @apply text-black mb-[0.625rem] font-[600] text-[1rem] leading-[120%];
+}
+
+/* Input */
+.input {
+  @apply mb-2 md:mb-4 lg:text-[1rem] outline-none w-full border border-[#E1E1E1] h-[30px] px-5 py-5;
+}
+
+/* Name Container */
+.fragments_container {
+  @apply w-full flex flex-col lg:flex-row items-center justify-between h-full;
+}
+
+/* First & Last Names Styles */
+.column_one,
+.column_two {
+  @apply w-full lg:w-[45%];
+}
+
+/* Styles for Label on TextArea */
+.textLabel {
+  @apply mb-[0.625rem] font-[600] text-[1rem] leading-[120%];
+}
+
+/* Stlyes for TextArea */
+.textArea {
+  @apply px-[1rem] outline-none py-[0.90625rem] lg:text-[1rem] h-[100px] lg:h-[120px] w-full border border-[#E1E1E1];
+}
+
+/* Submit Button Styles */
+.submit_btn {
+  @apply w-full h-[2.5rem] rounded-[0.5rem] font-medium text-[0.5rem]
+  md:text-[1rem] px-4 py-2 bg-[#1D1D1C] text-white border border-[#1D1D1C];
+}

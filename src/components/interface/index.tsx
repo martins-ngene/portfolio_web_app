@@ -1,6 +1,7 @@
 // Interface to declare datatypes for buttons
 export interface ButtonPropsI {
   href?: string;
+  type?: "reset" | "button" | "submit" | undefined;
   label?: string;
   isFilled?: boolean;
   src?: string;
