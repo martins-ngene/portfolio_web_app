@@ -1,0 +1,11 @@
+/* Projects Section Styles Goes Here */
+
+/* Container */
+.container {
+  @apply flex items-center justify-center w-full;
+}
+
+/* Card Container */
+.card_container {
+  @apply grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4;
+}
