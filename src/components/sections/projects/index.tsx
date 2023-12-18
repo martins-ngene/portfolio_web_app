@@ -2,7 +2,11 @@ import Card from "@/components/card";
 import styles from "./styles.module.css";
 import { projects } from "@/components/mock";
 
-const Projects = () => {
+const Projects = ({
+  onClick,
+}: {
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
+}) => {
   return (
     <div className={styles.container}>
       <div className={styles.card_container}>
@@ -11,9 +15,10 @@ const Projects = () => {
             <Card
               key={index}
               src={project.image}
-              title={project.name}
+              name={project.name}
               alt={project.name}
               className='w-full mb-6'
+              onClick={onClick}
             />
           );
         })}

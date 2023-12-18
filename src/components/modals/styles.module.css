@@ -1,0 +1,23 @@
+/* Modal Container */
+.modal_container {
+  @apply z-50 fixed left-0 right-0 top-0 w-full h-full flex items-center justify-center;
+  background: linear-gradient(
+    109.46deg,
+    rgba(200, 200, 200, 0.1) 1.57%,
+    rgba(196, 196, 196, 0.1) 100%
+  );
+  backdrop-filter: blur(10px);
+}
+
+.close_button {
+  @apply absolute top-[3%] bg-white w-[40px] h-[40px] rounded-[100%] flex items-center justify-center;
+}
+
+.modal_body_container {
+  @apply mx-auto lg:mx-0 w-[90%] lg:w-full h-[100vh] flex items-center justify-center;
+}
+
+/* Form Container */
+.form_container {
+  @apply bg-white flex flex-col w-full lg:w-[35%] h-[80%] rounded-[1rem] px-4 md:px-8 py-12;
+}

@@ -1,8 +1,9 @@
 import Image from "next/image";
 
 import styles from "./styles.module.css";
+import { CardPropsI } from "../interface";
 
-const Card = ({ src, title, alt, className }: any) => {
+const Card = ({ src, name, alt, className, onClick }: CardPropsI) => {
   return (
     <div className={`${styles.container} ${className}`}>
       <div className={styles.image_container}>
@@ -15,10 +16,10 @@ const Card = ({ src, title, alt, className }: any) => {
         />
       </div>
 
-      <div className={styles.title}>{title}</div>
+      <div className={styles.name}>{name}</div>
 
       <div className={styles.btn_container}>
-        <button className={styles.card_btn} type='button'>
+        <button className={styles.card_btn} onClick={onClick} type='button'>
           View Project
         </button>
       </div>

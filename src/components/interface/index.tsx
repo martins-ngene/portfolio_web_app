@@ -8,3 +8,16 @@ export interface ButtonPropsI {
   className?: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
+
+export interface ModalPropsI {
+  children: React.ReactNode;
+  onClick?: (param: any) => void;
+}
+
+export interface CardPropsI {
+  name: string;
+  className?: string;
+  src: string;
+  alt: string;
+  onClick?: (param: any) => void;
+}
