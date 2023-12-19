@@ -1,7 +1,7 @@
 /* Container Styles */
-.container {
-  @apply w-[90%] mx-auto h-[80vh] mt-[5rem];
-}
+/* .container {
+  @apply;
+} */
 
 /* Header */
 .header {

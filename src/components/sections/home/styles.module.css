@@ -1,10 +1,10 @@
 .hero_container {
-  @apply bg-transparent flex flex-col md:flex-row mx-auto w-[90%] justify-between;
+  @apply flex flex-col md:flex-row mx-auto justify-between;
 }
 
 .header,
 .welcome_text {
-  @apply text-center md:text-left text-[#1D1D1C] px-6 md:px-0;
+  @apply text-center text-[#1D1D1C] px-6 md:px-0;
 }
 
 .header {
@@ -12,11 +12,11 @@
 }
 
 .image {
-  @apply rounded-[100%];
+  @apply rounded-[50%];
 }
 
 .image_container {
-  @apply my-4 flex md:static items-center md:items-start justify-center md:justify-start w-full md:w-[30%];
+  @apply relative w-[300px] h-[300px];
 }
 
 .welcome_text {
@@ -28,16 +28,16 @@
 }
 
 .column_one {
-  @apply w-full md:w-[47.5%];
+  @apply w-full md:w-[47.5%] flex flex-col items-center;
 }
 
 .column_two {
-  @apply w-full md:w-[47.5%];
+  @apply w-full md:w-[47.5%] flex flex-col items-center justify-center;
 }
 
 /* Tag Container */
 .tag_container {
-  @apply flex flex-wrap;
+  @apply flex flex-wrap items-center justify-center;
 }
 
 /* Section Name */

@@ -1,14 +1,14 @@
-// import Footer from "@/components/footer";
-// import Logo from "@/components/logo";
-// import Navbar from "@/components/navbar";
-// import Contact from "@/components/sections/contacts";
-// import Hero from "@/components/sections/home";
 import { useState } from "react";
 import { Inter } from "next/font/google";
 
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
+import Contact from "@/components/sections/contacts";
+import Hero from "@/components/sections/home";
 import Modal from "@/components/modals";
 import Projects from "@/components/sections/projects";
 
+// Fonts For Project
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -37,12 +37,11 @@ export default function Home() {
       ) : (
         ""
       )}
-      {/* <Logo /> */}
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
+      <Navbar />
+      <Hero />
       <Projects onClick={() => showModal(!displayModal)} />
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Contact />
+      <Footer />
     </main>
   );
 }

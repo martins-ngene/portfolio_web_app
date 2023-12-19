@@ -21,3 +21,10 @@ export interface CardPropsI {
   alt: string;
   onClick?: (param: any) => void;
 }
+
+export interface SectionPropsI {
+  children: React.ReactNode;
+  header?: string;
+  id: string;
+  className?: string;
+}

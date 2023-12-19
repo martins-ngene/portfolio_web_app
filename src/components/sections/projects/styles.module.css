@@ -2,7 +2,7 @@
 
 /* Container */
 .container {
-  @apply flex items-center justify-center w-full;
+  @apply flex items-center justify-center;
 }
 
 /* Card Container */

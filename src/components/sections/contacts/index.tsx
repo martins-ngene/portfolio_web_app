@@ -6,6 +6,7 @@ import * as yup from "yup";
 import styles from "./styles.module.css";
 import { sendMessage } from "@/components/helpers";
 import { contactInfo } from "@/components/types";
+import Section from "../section";
 
 const schema = yup
   .object({
@@ -38,76 +39,78 @@ const Contact = () => {
   };
 
   return (
-    <form className={styles.container} onSubmit={handleSubmit(submitForm)}>
-      <div>
-        <div className={styles.header}>Get in touch</div>
-        <div className={styles.fragments_container}>
-          {/* <p className={styles.welcome_text}>
+    <Section id='contact'>
+      <form className={styles.container} onSubmit={handleSubmit(submitForm)}>
+        <div>
+          <div className={styles.header}>Get in touch</div>
+          <div className={styles.fragments_container}>
+            {/* <p className={styles.welcome_text}>
             Looking to integrate <strong>Auto Blog AI</strong> in your product
             to automate usage guides and documentation or just to have a casual
             meeting? Fill out the form below so we can get started!
           </p> */}
 
-          <div className={styles.column_one}>
-            <div className={styles.name_container}>
-              <label className={styles.label} htmlFor='name'>
-                Name
-              </label>
-              <input
-                className={styles.input}
-                id='name'
-                placeholder='Enter your name'
-                type='text'
-                {...register("name")}
-              />
-              <p>{errors.name?.message}</p>
-            </div>
-            <div className={styles.email_container}>
-              <label className={styles.label} htmlFor='email'>
-                Email
-              </label>
-              <input
-                className={styles.input}
-                id='email'
-                placeholder='Enter your email'
-                type='email'
-                {...register("email")}
-              />
-              <p>{errors.email?.message}</p>
+            <div className={styles.column_one}>
+              <div className={styles.name_container}>
+                <label className={styles.label} htmlFor='name'>
+                  Name
+                </label>
+                <input
+                  className={styles.input}
+                  id='name'
+                  placeholder='Enter your name'
+                  type='text'
+                  {...register("name")}
+                />
+                <p>{errors.name?.message}</p>
+              </div>
+              <div className={styles.email_container}>
+                <label className={styles.label} htmlFor='email'>
+                  Email
+                </label>
+                <input
+                  className={styles.input}
+                  id='email'
+                  placeholder='Enter your email'
+                  type='email'
+                  {...register("email")}
+                />
+                <p>{errors.email?.message}</p>
+              </div>
+
+              <div>
+                <label htmlFor='message' className={styles.textLabel}>
+                  Message
+                </label>
+                <textarea
+                  className={styles.textArea}
+                  id='message'
+                  placeholder='Enter your message'
+                  {...register("message")}></textarea>
+                <p>{errors.message?.message}</p>
+              </div>
+              <p>
+                {mutation.isLoading
+                  ? "Message is sending ..."
+                  : mutation.isSuccess
+                  ? "Message is sent successfully"
+                  : mutation.isError
+                  ? "Please reload the page and try again"
+                  : ""}
+              </p>
+
+              <div className='mt-6'>
+                <button className={styles.submit_btn} type='submit'>
+                  Submit
+                </button>
+              </div>
             </div>
 
-            <div>
-              <label htmlFor='message' className={styles.textLabel}>
-                Message
-              </label>
-              <textarea
-                className={styles.textArea}
-                id='message'
-                placeholder='Enter your message'
-                {...register("message")}></textarea>
-              <p>{errors.message?.message}</p>
-            </div>
-            <p>
-              {mutation.isLoading
-                ? "Message is sending ..."
-                : mutation.isSuccess
-                ? "Message is sent successfully"
-                : mutation.isError
-                ? "Please reload the page and try again"
-                : ""}
-            </p>
-
-            <div className='mt-6'>
-              <button className={styles.submit_btn} type='submit'>
-                Submit
-              </button>
-            </div>
+            <div className={styles.column_two}></div>
           </div>
-
-          <div className={styles.column_two}></div>
         </div>
-      </div>
-    </form>
+      </form>
+    </Section>
   );
 };
 

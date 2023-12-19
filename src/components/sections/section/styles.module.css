@@ -1,0 +1,5 @@
+/* Section Styles Goes Here */
+
+.container {
+  @apply w-full pt-[5rem] md:w-[90%] h-full lg:h-[100vh] bg-transparent mx-auto flex items-center justify-center;
+}

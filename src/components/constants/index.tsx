@@ -1,6 +1,7 @@
 // Navbar Links
 export const nav_links = [
   { name: "Home", link: "/" },
+  { name: "Skills", link: "#skills" },
   { name: "Projects", link: "#projects" },
   { name: "Contact", link: "#contact" },
 ];
@@ -9,7 +10,6 @@ export const nav_links = [
 export const menu_links = [
   { name: "Home", link: "/" },
   { name: "Skills", link: "#skills" },
-  { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Contact", link: "#contact" },
 ];
@@ -17,7 +17,7 @@ export const menu_links = [
 // Skills Section Schema
 export const skills_schema = [
   {
-    section_name: "Concepts",
+    section_name: "",
     tags: [
       "Authentication & Authorization",
       "Object Oriented Programming (OOP)",

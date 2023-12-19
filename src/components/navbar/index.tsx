@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import Link from "next/link";
 
 import styles from "./styles.module.css";
 import { nav_links } from "../constants";
-import Link from "next/link";
 import Menu from "../menu";
 import Logo from "../logo";
 
