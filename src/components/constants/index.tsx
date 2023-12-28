@@ -14,34 +14,34 @@ export const menu_links = [
   { name: "Contact", link: "#contact" },
 ];
 
+// concepts Schema
+
+export const concepts_schema = [
+  "Authentication & Authorization",
+  "Object Oriented Programming (OOP)",
+  "Component Driven Development",
+  "Test Driven Development (TDD)",
+  "Unit Test",
+  "Integration Tests",
+  "End To End Tests (E2E)",
+  "Progressive Web Applications (PWA)",
+  "Single Page Applications (SPA)",
+  "Pagination",
+  "SQL & NoSQL Databases",
+  "Responsive Web Design (RWD)",
+  "Cross-Browser Compatability",
+  "Design To Code",
+  "AI Integrations",
+  "Debugging",
+  "Version Control Systems",
+  "Containerization",
+  "Continuous Integration & Delivery (CI/CD)",
+  "RESTful APIs",
+  "GraphQL APIs",
+];
+
 // Skills Section Schema
 export const skills_schema = [
-  {
-    section_name: "",
-    tags: [
-      "Authentication & Authorization",
-      "Object Oriented Programming (OOP)",
-      "Component Driven Development",
-      "Test Driven Development (TDD)",
-      "Unit Test",
-      "Integration Tests",
-      "End To End Tests (E2E)",
-      "Progressive Web Applications (PWA)",
-      "Single Page Applications (SPA)",
-      "Pagination",
-      "SQL & NoSQL Databases",
-      "Responsive Web Design (RWD)",
-      "Cross-Browser Compatability",
-      "Design To Code",
-      "AI Integrations",
-      "Debugging",
-      "Version Control Systems",
-      "Containerization",
-      "Continuous Integration & Delivery (CI/CD)",
-      "RESTful APIs",
-      "GraphQL APIs",
-    ],
-  },
   {
     section_name: "Frontend",
     tags: [
@@ -60,7 +60,6 @@ export const skills_schema = [
       "Jest",
       "React Testing Library (RTL)",
       "React Spring",
-      "Three.js",
     ],
   },
   {
@@ -76,7 +75,6 @@ export const skills_schema = [
       "Prisma",
       "MongoDB",
       "Mongoose",
-      "Redis",
       "Auth0",
       "JWT",
       "Super Test",

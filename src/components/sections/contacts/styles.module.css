@@ -1,7 +1,7 @@
 /* Container Styles */
-/* .container {
-  @apply;
-} */
+.container {
+  @apply w-full;
+}
 
 /* Header */
 .header {

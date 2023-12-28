@@ -1,0 +1,4 @@
+/* Styles  For Skills Sections Goes Here */
+.skills_container {
+  @apply flex flex-wrap items-center justify-center;
+}

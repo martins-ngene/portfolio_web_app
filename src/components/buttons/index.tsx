@@ -6,11 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Button with styles for filled and outline
-export const Button = ({ label, isFilled, href, type}: ButtonPropsI) => {
+export const Button = ({ label, isFilled, className, type }: ButtonPropsI) => {
   return (
-    <Link href={`${href}`} passHref>
+    <div className={className}>
       <button
-      type={type}
+        type={type}
         className={`${isFilled ? styles.filled_btn : styles.outlined_btn}`}>
         {label}
         {!isFilled && (
@@ -23,6 +23,6 @@ export const Button = ({ label, isFilled, href, type}: ButtonPropsI) => {
           />
         )}
       </button>
-    </Link>
+    </div>
   );
 };

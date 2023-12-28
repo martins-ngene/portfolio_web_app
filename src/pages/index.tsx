@@ -7,6 +7,7 @@ import Contact from "@/components/sections/contacts";
 import Hero from "@/components/sections/home";
 import Modal from "@/components/modals";
 import Projects from "@/components/sections/projects";
+import Skills from "@/components/sections/skills";
 
 // Fonts For Project
 const inter = Inter({ subsets: ["latin"] });
@@ -40,6 +41,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Projects onClick={() => showModal(!displayModal)} />
+      <Skills />
       <Contact />
       <Footer />
     </main>

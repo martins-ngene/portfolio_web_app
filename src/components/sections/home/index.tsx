@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 import { Button } from "@/components/buttons";
 import Tag from "@/components/tags";
-import { skills_schema } from "@/components/constants";
+import { concepts_schema } from "@/components/constants";
 import Section from "../section";
 
 const Hero = () => {
@@ -27,7 +27,12 @@ const Hero = () => {
 
           <div className={styles.btn_container}>
             <Button href='/sign_up' label='View Resume' isFilled />
-            <Button href='/sign_in' label='Github Profile' isFilled={false} />
+            <Button
+              href='/sign_in'
+              label='Github Profile'
+              isFilled={false}
+              className='ml-2'
+            />
           </div>
         </div>
 
@@ -51,7 +56,7 @@ const Hero = () => {
           </div>
 
           <div className={styles.tag_container}>
-            {skills_schema[0].tags.map((tag, index) => {
+            {concepts_schema.map((tag, index) => {
               return <Tag key={index} tag_name={tag} />;
             })}
           </div>
