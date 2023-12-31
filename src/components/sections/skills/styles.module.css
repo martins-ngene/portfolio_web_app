@@ -1,4 +1,19 @@
 /* Styles  For Skills Sections Goes Here */
 .skills_container {
-  @apply flex flex-wrap items-center justify-center;
+  @apply flex flex-wrap items-center;
+}
+
+.skills_section_name {
+  @apply font-semibold text-[1.125rem];
+}
+
+/* Columns Container */
+.fragments_container {
+  @apply w-full flex flex-col lg:flex-row justify-between h-full;
+}
+
+/* Column Styles */
+.column_one,
+.column_two {
+  @apply w-full lg:w-[45%];
 }

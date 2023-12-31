@@ -3,11 +3,6 @@
   @apply w-full;
 }
 
-/* Header */
-.header {
-  @apply mx-0 mb-2 md:mb-4 font-semibold leading-8 text-[2rem];
-}
-
 /* Welcome Text */
 .welcome_text {
   @apply my-2;
@@ -23,12 +18,12 @@
   @apply mb-2 md:mb-4 lg:text-[1rem] outline-none w-full border border-[#E1E1E1] h-[30px] px-5 py-5;
 }
 
-/* Name Container */
+/* Columns Container */
 .fragments_container {
   @apply w-full flex flex-col lg:flex-row justify-between h-full;
 }
 
-/* First & Last Names Styles */
+/* Column Styles */
 .column_one,
 .column_two {
   @apply w-full lg:w-[45%];

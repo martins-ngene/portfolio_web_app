@@ -9,7 +9,7 @@ const Projects = ({
   onClick: React.MouseEventHandler<HTMLButtonElement>;
 }) => {
   return (
-    <Section id='projects'>
+    <Section id='projects' header='Projects'>
       <div className={styles.container}>
         <div className={styles.card_container}>
           {projects.map((project, index) => {

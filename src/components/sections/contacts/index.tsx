@@ -42,10 +42,9 @@ const Contact = () => {
   };
 
   return (
-    <Section id='contact'>
+    <Section id='contact' header='Get in touch'>
       <form className={styles.container} onSubmit={handleSubmit(submitForm)}>
         <div>
-          <div className={styles.header}>Get in touch</div>
           <div className={styles.fragments_container}>
             <div className={styles.column_one}>
               <div className={styles.name_container}>

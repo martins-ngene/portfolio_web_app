@@ -83,6 +83,7 @@ export const skills_schema = [
       "Jest",
       "React Testing Library (RTL)",
       "React Spring",
+      "Framer Motion",
     ],
   },
   {
@@ -102,14 +103,24 @@ export const skills_schema = [
       "JWT",
       "Super Test",
       "Bash Scripting",
+      "AppWrite",
     ],
   },
   {
-    section_name: "DevOps",
+    section_name: "CI/CD",
     tags: ["Github Actions", "Vercel", "AWS", "Docker"],
   },
   {
     section_name: "Tools",
-    tags: ["Git", "GitHub", "GitLab", "Vite", "Expo", "Yarn", "Linux (Ubuntu)"],
+    tags: [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Vite",
+      "Expo",
+      "Yarn",
+      "Linux (Ubuntu)",
+      "Postman",
+    ],
   },
 ];
