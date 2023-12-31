@@ -1,6 +1,6 @@
 // Navbar Links
 export const nav_links = [
-  { name: "Home", link: "/" },
+  { name: "Home", link: "#" },
   { name: "Skills", link: "#skills" },
   { name: "Projects", link: "#projects" },
   { name: "Contact", link: "#contact" },
@@ -14,15 +14,31 @@ export const menu_links = [
   { name: "Contact", link: "#contact" },
 ];
 
-// Menu Links
+// Contact Links
 export const contact_links = [
-  { name: "Home", icon: "/github.svg" },
-  { name: "Skills", icon: "/linkedin.svg" },
-  { name: "Projects", icon: "/twitter.svg" },
+  {
+    name: "Github",
+    link: "https://github.com/Martinsngene",
+    icon: "/github.svg",
+  },
+  {
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/martins-ngene/",
+    icon: "/linkedin.svg",
+  },
+  {
+    name: "@martins_ngene",
+    link: "https://twitter.com/martins_ngene",
+    icon: "/twitter.svg",
+  },
+  {
+    name: "martinsngene@gmail.com",
+    link: "mailto:martinsngene@gmail.com",
+    icon: "/gmail.svg",
+  },
 ];
 
 // concepts Schema
-
 export const concepts_schema = [
   "Authentication & Authorization",
   "Object Oriented Programming (OOP)",

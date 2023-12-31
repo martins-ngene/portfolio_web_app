@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -7,6 +9,7 @@ import styles from "./styles.module.css";
 import { sendMessage } from "@/components/helpers";
 import { contactInfo } from "@/components/types";
 import Section from "../section";
+import { contact_links } from "@/components/constants";
 
 const schema = yup
   .object({
@@ -44,12 +47,6 @@ const Contact = () => {
         <div>
           <div className={styles.header}>Get in touch</div>
           <div className={styles.fragments_container}>
-            {/* <p className={styles.welcome_text}>
-            Looking to integrate <strong>Auto Blog AI</strong> in your product
-            to automate usage guides and documentation or just to have a casual
-            meeting? Fill out the form below so we can get started!
-          </p> */}
-
             <div className={styles.column_one}>
               <div className={styles.name_container}>
                 <label className={styles.label} htmlFor='name'>
@@ -106,7 +103,35 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className={styles.column_two}></div>
+            <div className={styles.column_two}>
+              <p className={styles.welcome_text}>
+                Do you have an idea I could help you actualise, a project you
+                need my expertise on or just a casual coffee chat? Hit me up,
+                let's talk!
+                <br /> <br />
+                Don't forget to connect with me on my social media handles, I
+                share knowledge and insights that you will find helpful.
+              </p>
+
+              <div className={styles.links_container}>
+                {contact_links.map((link, index) => {
+                  return (
+                    <Link
+                      className={styles.contact_link}
+                      key={index}
+                      href={link.link}
+                      passHref>
+                      <div className={styles.contact_link_icon}>
+                        <Image alt={link.name} src={link.icon} fill />
+                      </div>
+                      <span className={styles.contact_link_name}>
+                        {link.name}
+                      </span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </form>
