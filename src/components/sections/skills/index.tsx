@@ -13,7 +13,7 @@ const Skills = () => {
           return (
             <div key={index}>
               {section.section_name}
-              <div>
+              <div className={styles.skills_container}>
                 {section.tags.map((skill, index: number) => {
                   return <Tag key={index} tag_name={skill} />;
                 })}

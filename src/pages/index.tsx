@@ -23,6 +23,7 @@ export default function Home() {
 
   return (
     <main className={`${inter.className}`}>
+      {/* <a target="_blank" href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
       {displayModal ? (
         <Modal onClick={() => showModal(!displayModal)}>
           <div>

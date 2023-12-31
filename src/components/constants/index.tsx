@@ -14,6 +14,13 @@ export const menu_links = [
   { name: "Contact", link: "#contact" },
 ];
 
+// Menu Links
+export const contact_links = [
+  { name: "Home", icon: "/github.svg" },
+  { name: "Skills", icon: "/linkedin.svg" },
+  { name: "Projects", icon: "/twitter.svg" },
+];
+
 // concepts Schema
 
 export const concepts_schema = [
