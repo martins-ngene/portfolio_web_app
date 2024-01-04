@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="container undefined"
+    id="hero"
+  >
+    <h1
+      class="header"
+    />
+    <div
+      class="body"
+    >
+      <div
+        class="hero_container"
+        data-testid="software-deveoper"
+      >
+        <div
+          class="column_one"
+        >
+          <div
+            class="image_container"
+          >
+            <img
+              alt="profile"
+              class="image"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2Fprofile.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fprofile.jpg&w=640&q=75 640w, /_next/image?url=%2Fprofile.jpg&w=750&q=75 750w, /_next/image?url=%2Fprofile.jpg&w=828&q=75 828w, /_next/image?url=%2Fprofile.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fprofile.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fprofile.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fprofile.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fprofile.jpg&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            />
+          </div>
+          <h1
+            class="header"
+          >
+            Hi, I'm 
+            <strong>
+              Martins Ngene
+            </strong>
+            , a
+             
+            <strong>
+              Software Developer
+            </strong>
+            . I manifest success in whatever I build.
+          </h1>
+          <div
+            class="btn_container"
+          >
+            <div>
+              <button
+                class="filled_btn"
+              >
+                View Resume
+              </button>
+            </div>
+            <div
+              class="ml-2"
+            >
+              <button
+                class="outlined_btn"
+              >
+                Github Profile
+                <img
+                  alt="angle_right"
+                  class="ml-3"
+                  data-nimg="1"
+                  decoding="async"
+                  height="10"
+                  loading="lazy"
+                  src="/angle_right.svg"
+                  style="color: transparent;"
+                  width="10"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="column_two"
+        >
+          <div>
+            <p
+              class="welcome_text"
+            >
+              I have been in the industry for 3 years with in-depth experience in working for early stage startups both locally and internationally.
+            </p>
+            <p
+              class="welcome_text"
+            >
+              With strong command in JavaScript / TypeScript, I build web applications using cutting edge technologies like:
+               
+              <strong>
+                React.js / Next.js, Node.js / Express.js, PostgreSQL and MongoDB
+              </strong>
+              . I'm open to explore opportunities and actively seearching for engagements. Find my resume and github in the buttons below.
+            </p>
+          </div>
+          <div
+            class="tag_container"
+          >
+            <span
+              class="tag"
+            >
+              Authentication & Authorization
+            </span>
+            <span
+              class="tag"
+            >
+              Object Oriented Programming (OOP)
+            </span>
+            <span
+              class="tag"
+            >
+              Component Driven Development
+            </span>
+            <span
+              class="tag"
+            >
+              Test Driven Development (TDD)
+            </span>
+            <span
+              class="tag"
+            >
+              Unit Test
+            </span>
+            <span
+              class="tag"
+            >
+              Integration Tests
+            </span>
+            <span
+              class="tag"
+            >
+              End To End Tests (E2E)
+            </span>
+            <span
+              class="tag"
+            >
+              Progressive Web Applications (PWA)
+            </span>
+            <span
+              class="tag"
+            >
+              Single Page Applications (SPA)
+            </span>
+            <span
+              class="tag"
+            >
+              Pagination
+            </span>
+            <span
+              class="tag"
+            >
+              SQL & NoSQL Databases
+            </span>
+            <span
+              class="tag"
+            >
+              Responsive Web Design (RWD)
+            </span>
+            <span
+              class="tag"
+            >
+              Cross-Browser Compatability
+            </span>
+            <span
+              class="tag"
+            >
+              Design To Code
+            </span>
+            <span
+              class="tag"
+            >
+              AI Integrations
+            </span>
+            <span
+              class="tag"
+            >
+              Debugging
+            </span>
+            <span
+              class="tag"
+            >
+              Version Control Systems
+            </span>
+            <span
+              class="tag"
+            >
+              Containerization
+            </span>
+            <span
+              class="tag"
+            >
+              Continuous Integration & Delivery (CI/CD)
+            </span>
+            <span
+              class="tag"
+            >
+              RESTful APIs
+            </span>
+            <span
+              class="tag"
+            >
+              GraphQL APIs
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -9,7 +9,7 @@ import Section from "../section";
 const Hero = () => {
   return (
     <Section id='hero'>
-      <div className={styles.hero_container}>
+      <div className={styles.hero_container} data-testid='software-deveoper'>
         <div className={styles.column_one}>
           <div className={styles.image_container}>
             <Image
