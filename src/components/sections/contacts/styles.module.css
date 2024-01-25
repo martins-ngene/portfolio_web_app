@@ -29,9 +29,13 @@
   @apply w-full lg:w-[45%];
 }
 
-/* .column_two {
-  @apply bg-red-400;
-} */
+.column_one {
+  @apply order-2 md:order-1;
+}
+
+.column_two {
+  @apply order-1 md:order-2;
+}
 
 /* Styles for Label on TextArea */
 .textLabel {

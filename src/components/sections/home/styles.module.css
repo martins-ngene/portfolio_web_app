@@ -24,11 +24,11 @@
 }
 
 .btn_container {
-  @apply mx-auto md:mx-0 flex items-center justify-between max-w-[200px] md:max-w-[320px] mt-4;
+  @apply mx-auto md:mx-0 flex items-center justify-between max-w-[250px] md:max-w-[350px] mt-4;
 }
 
 .column_one {
-  @apply w-full md:w-[47.5%] flex flex-col items-center;
+  @apply w-full md:w-[47.5%] flex flex-col items-center h-[100vh] md:h-full;
 }
 
 .column_two {
